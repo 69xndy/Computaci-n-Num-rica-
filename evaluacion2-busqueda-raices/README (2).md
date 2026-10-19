@@ -137,9 +137,10 @@ evaluacion2-busqueda-raices
         ├── generar_datos_funcion.py
         ├── generar_todos_csv.py
         ├── generar_todos_graficos.py
+        ├── resumen_convergencia.py
         ├── graficar_funcion.py
         ├── grafico_convergencia.py
-        └── resumen_convergencia.py
+        └── comparar_convergencia.py
 ```
 
 ---
@@ -160,6 +161,69 @@ Raíz aproximada encontrada:
 ```text
 x ≈ 1.52138
 ```
+
+---
+## Descripción de los Scripts
+
+### funciones.py
+
+Contiene las funciones matemáticas analizadas y las derivadas necesarias para los métodos de Newton-Raphson y Newton-Raphson Mejorado.
+
+### biseccion.py
+
+Implementa el método numérico de Bisección para aproximar raíces mediante reducción sucesiva de intervalos.
+
+### falsa_posicion.py
+
+Implementa el método de Falsa Posición utilizando interpolación lineal entre los extremos del intervalo.
+
+### punto_fijo.py
+
+Implementa el método de Punto Fijo utilizando una función de iteración g(x).
+
+### secante.py
+
+Implementa el método de la Secante para aproximar raíces sin utilizar derivadas analíticas.
+
+### newton_raphson.py
+
+Implementa el método de Newton-Raphson utilizando la primera derivada de la función.
+
+### newton_raphson_mejorado.py
+
+Implementa el método de Newton-Raphson Mejorado utilizando primera y segunda derivada.
+
+### generar_datos_funcion.py
+
+Genera archivos CSV con pares de valores (x, f(x)) para las funciones analizadas.
+
+### generar_todos_csv.py
+
+Genera automáticamente todos los archivos CSV solicitados para las funciones del trabajo.
+
+### graficar_funcion.py
+
+Genera gráficos individuales de las funciones y marca visualmente la raíz encontrada.
+
+### generar_todos_graficos.py
+
+Genera automáticamente todas las imágenes de las funciones analizadas.
+
+### grafico_convergencia.py
+
+Genera gráficos de convergencia error versus iteración para un método específico.
+
+### resumen_convergencia.py
+
+Calcula y almacena un resumen comparativo de iteraciones y raíces obtenidas por los distintos métodos.
+
+### guardar_csv.py
+
+Permite exportar resultados y tablas a formato CSV.
+
+### comparar_convergencia.py
+
+Genera un gráfico comparativo de convergencia entre los métodos de Bisección, Falsa Posición, Punto Fijo, Secante, Newton-Raphson y Newton-Raphson Mejorado, utilizando el error de cada iteración.
 
 ---
 
